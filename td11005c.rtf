@@ -1,0 +1,143 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2509
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 EX 3: \
+\
+A) Demander \'e0  l\'92usager d\'92entrer les donn\'e9es de la fonction quadratique, l\'92intervalle et le nombre de points. \
+(Lire) les donn\'e9es entr\'e9es. Calculer le saut afin de d\'e9terminer les x et enfin boucler afin de calculer x et y. \
+Afficher la r\'e9ponse.	\
+\
+B)\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 // d\'e9claration des variables ; \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 R\'e9el : a, b, c, y=0.0, x=0.0 ,  saut =0.0, xMin, xMax; \
+Entier: nPoints;\
+\
+ \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+// d\'e9but \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Afficher \'ab entrer la valeur a de la quadratique : \'bb\
+Lire a ; \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \outl0\strokewidth0 Afficher \'ab entrer la valeur b de la quadratique : \'bb\
+Lire b ; \
+\
+Afficher \'ab entrer la valeur c de la quadratique : \'bb\
+Lire c ; \
+\
+Afficher \'ab entrer la valeur xMin : \'bb\
+Lire xMin ; \
+\
+Afficher \'ab entrer la valeur xMax  : \'bb\
+Lire xMax ; \
+\
+Afficher \'ab entrer le nombre de point que vous voulez afficher : \'bb\
+Lire nPoint; \
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+FAIRE calculer saut :\
+Saut = (xMax-xMin)/(nPoint-1)\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+i= 0\
+TANT QUE i < nPoint Faire\
+\
+	\
+	x = xMin + (saut * i)\
+\
+	Y = a*(x^2) + b*x + c\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 	Afficher \'abla valeur de (xi, yi) sont: \'bb \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 	i++\
+\
+Fin TANT QUE\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+Ex 4:\
+\
+\
+A)\
+\
+B)\
+\
+//d\'e9claration des variables :\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 R\'e9el :  saut =0.0, xMin, xMax, yMin, yMax; \
+Entier: nLignes, tailleY;
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+Afficher \'ab entrer la valeur xMin : \'bb\
+Lire xMin ; \
+\
+Afficher \'ab entrer la valeur xMax  : \'bb\
+Lire xMax ; \
+\
+Afficher \'ab entrer le nombre de ligne que vous voulez afficher : \'bb\
+Lire nLigne; \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 Afficher \'ab entrer la valeur yMin : \'bb\
+Lire yMin ; \
+\
+Afficher \'ab entrer la valeur yMax  : \'bb\
+Lire yMax ; \
+\
+Afficher \'ab entrer le nombre d\'92espace final que vous voulez afficher : \'bb\
+Lire tailleY; \
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+FAIRE calculer saut :\
+Saut = (xMax-xMin)/(nPoint-1)\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+i= 0\
+TANT QUE i < nPoint Faire\
+\
+	\
+	x = xMin + (saut * i)\
+\
+	Y = a*(x^2) + b*x + c\
+\
+	Afficher \'abla valeur de (xi, yi) sont: \'bb \
+\
+	i++\
+\
+Fin TANT QUE\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
